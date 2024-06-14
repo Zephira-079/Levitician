@@ -7,6 +7,7 @@ class General(commands.Cog):
     
     @commands.command()
     async def say(self, ctx, *text):
+        await ctx.message.delete()
         await ctx.send(" ".join(text))
 
 async def setup(bot):
