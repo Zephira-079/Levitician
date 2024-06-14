@@ -1,8 +1,9 @@
 # Levitician
 - a personal bot
 
-
-
+#### version 0.0.1.1
+--------
+#### configuration:
 <code>
 {
     "tokens": [
