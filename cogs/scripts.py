@@ -17,7 +17,7 @@ class Scripts(commands.Cog):
             await ctx.send(" ".join(text))
             
     @commands.command(aliases=["random","choice"])
-    async def randint(self, ctx, *numbers: int):
+    async def randint(self, ctx, *numbers):
         if len(numbers) == 0 and isinstance(numbers, float):
             await ctx.send(f"result: {random.randint(0, 1)}")
         elif len(numbers) == 1 and isinstance(numbers, float):
@@ -25,6 +25,8 @@ class Scripts(commands.Cog):
         elif len(numbers) == 2 and isinstance(numbers, float):
             await ctx.send(f"result: {random.randint(numbers[0], numbers[1])}")
         elif len(numbers) > 2 and isinstance(numbers, float):
+            await ctx.send(f"result: {random.choice(numbers)}")
+        elif isinstance(numbers, str):
             await ctx.send(f"result: {random.choice(numbers)}")
 
     @commands.command(aliases=["math","expr","calc","calculate"])
