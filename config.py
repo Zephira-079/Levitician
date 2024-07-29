@@ -1,7 +1,9 @@
 import os
 import json
+from dotenv import load_dotenv
+load_dotenv()
 
-config_path = "./config.json"
+config_path = "./config.json" # deprecated but still able to use
 
 def get_config():
     if os.path.exists(config_path):

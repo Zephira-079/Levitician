@@ -1,9 +1,10 @@
 # Levitician
 - a personal bot
 
-#### version 0.0.1.1
+#### version 0.0.1.2
 --------
 #### configuration:
+<li>  deprecated but still works </li>
 <code>
 {
     "tokens": [
